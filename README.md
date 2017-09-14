@@ -16,7 +16,7 @@ docker rmi $(docker images -q)
 # Stop running containers
 docker stop $(docker ps -q)
 # Delete images with no tag/name
-docker rmi $(docker images -f "dangling=true -q)
+docker rmi $(docker images -f "dangling=true" -q)
 ```
 
 # License
