@@ -7,6 +7,12 @@ Welcome to XEd. This is the source for a Docker image I'm working on to be a sta
 ```bash
 docker build -t tschf/xed  
 docker run --shm-size=2g -it tschf/xed
+
+# Removing, per: https://stackoverflow.com/questions/21398087/how-can-i-delete-dockers-images
+# Containers
+docker rm $(docker ps -a -q)
+# Images
+docker rmi $(docker images -q)
 ```
 
 # License
