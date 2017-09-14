@@ -3,3 +3,4 @@ bc
 libaio1
 rpm
 vim
+golang-1.6
