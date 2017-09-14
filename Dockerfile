@@ -16,8 +16,8 @@ COPY install/ $INSTALL_DIR/
 
 COPY sbin/ /sbin/
 
-RUN apt-get update -qq && \
-    apt-get install -y -qq --no-install-recommends $(cat $INSTALL_DIR/requirements.txt)
+RUN apt-get -qq update && \
+    apt-get install -y --no-install-recommends $(cat $INSTALL_DIR/requirements.txt) > /dev/null
 
 RUN mkdir /var/lock/subsys
 
