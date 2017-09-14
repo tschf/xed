@@ -7,18 +7,18 @@ FROM ubuntu:16.04
 
 MAINTAINER Trent Schafer <trent.schafer@gmail.com>
 
-ENV INSTALL_DIR="$HOME/install"
+USER root
+WORKDIR /root
+
+ENV INSTALL_DIR="install" 
 
 COPY requirements.txt $INSTALL_DIR/
 
 COPY sbin/ /sbin/
-
-RUN echo $INSTALL_DIR
 
 RUN apt-get update -qq && \
     apt-get install -y -qq --no-install-recommends $(cat $INSTALL_DIR/requirements.txt)
 
 RUN mkdir /var/lock/subsys
 
-RUN adduser --disabled-password --gecos "" scott
 
