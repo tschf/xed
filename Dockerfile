@@ -12,7 +12,7 @@ WORKDIR /root
 
 ENV INSTALL_DIR="install" 
 
-COPY requirements.txt $INSTALL_DIR/
+COPY install/ $INSTALL_DIR/
 
 COPY sbin/ /sbin/
 
