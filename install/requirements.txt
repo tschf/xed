@@ -6,3 +6,4 @@ vim
 golang-go
 git
 ca-certificates
+net-tools
