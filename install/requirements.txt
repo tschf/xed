@@ -3,4 +3,6 @@ bc
 libaio1
 rpm
 vim
-golang-1.6
+golang-go
+git
+ca-certificates
