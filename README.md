@@ -13,6 +13,10 @@ docker run --shm-size=2g -it tschf/xed
 docker rm $(docker ps -a -q)
 # Images
 docker rmi $(docker images -q)
+# Stop running containers
+docker stop $(docker ps -q)
+# Delete images with no tag/name
+docker rmi $(docker images -f "dangling=true -q)
 ```
 
 # License
