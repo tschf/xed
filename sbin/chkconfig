@@ -1,0 +1,5 @@
+#!/bin/bash
+# This file is just a placeholder executable. The Oracle XE installation
+# file expects this executable and will fall over if it doesn't exist. 
+# Since this container is purely used for CI integrations, we don't really
+# need to worry about adding a proper implementation for this.

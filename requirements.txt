@@ -1,0 +1,5 @@
+unzip
+bc
+libaio1
+rpm
+vim
