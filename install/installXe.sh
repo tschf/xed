@@ -11,5 +11,5 @@ XE_RPM_BASE_ZIP="$(basename "${XE_RPM_ZIP}")"
 XE_RPM="$(basename "${XE_RPM_BASE_ZIP}" .zip)"
 
 unzip -j ${XE_RPM_BASE_ZIP} "Disk1/${XE_RPM}"
-sudo rpm --install --nodeps --nopre "${XE_RPM}"
+rpm --install --nodeps --nopre "${XE_RPM}"
 
