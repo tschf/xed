@@ -14,7 +14,7 @@ docker rm $(docker ps -a -q)
 # Images
 docker rmi $(docker images -q)
 # Stop running containers
-docker stop $(docker ps -q)
+docker stop $(docker ps -q -a)
 # Delete images with no tag/name
 docker rmi $(docker images -f "dangling=true" -q)
 ```
