@@ -18,6 +18,7 @@ ENV USER root
 ENV INSTALL_DIR="install" \
     PATH="$HOME/go/bin:$PATH" \
     GOPATH="$HOME/go" \
+    ORACLE_BASE=/u01/app/oracle \
     ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe \
     ORACLE_SID=XE
 
