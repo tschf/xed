@@ -19,6 +19,7 @@ rpm --install --nodeps --nopre "${XE_RPM}"
 # Set to something other than default of OP$
 echo 'OS_AUTHENT_PREFIX=""' | tee -a "$ORACLE_HOME/config/scripts/init.ora" > /dev/null
 cp listener.ora $ORACLE_HOME/network/admin/listener.ora
+cp runXe.sh $ORACLE_BASE/runXe.sh
 
 /etc/init.d/oracle-xe configure < xe-conf-input.txt
 
