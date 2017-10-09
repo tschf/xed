@@ -2,7 +2,6 @@ unzip
 bc
 libaio1
 rpm
-vim
 golang-go
 git
 ca-certificates
